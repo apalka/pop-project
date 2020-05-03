@@ -8,6 +8,10 @@
     <artifactId>pop-project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <envUrl>https://www.seleniumeasy.com/test/</envUrl>
+    </properties>
+
     <dependencies>
 
         <dependency>

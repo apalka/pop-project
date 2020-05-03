@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TablePage extends BasePage {
 
-    protected final String TABLE_URL = BASE_URL + "table-pagination-demo.html";
+    protected final String TABLE_URL = System.getProperty("envUrl") + "table-pagination-demo.html";
 
     @FindBy(xpath = "//div[@class='col-md-6 text-left']//p")
     public List<WebElement> paragraphs;

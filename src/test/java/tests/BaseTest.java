@@ -9,8 +9,9 @@ public class BaseTest {
     public static WebDriver driver;
 
     @BeforeAll
-    static void beforeAll() {
+    public static void beforeAll() {
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
+        System.setProperty("envUrl", "https://www.seleniumeasy.com/test/");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }

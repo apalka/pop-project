@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class FormPage extends BasePage {
 
-    protected final String FORM_URL = BASE_URL + "input-form-demo.html";
+    protected final String FORM_URL = System.getProperty("envUrl") + "input-form-demo.html";
 
     @FindBy(name = "first_name")
     public WebElement firstNameInput;
